@@ -1,3 +1,32 @@
+function calculoDemorado (numero){
+    return new Promise(function (resolve, reject){
+        let res = 0
+        for (let i = 1; i <= numero; i++)
+            res += i
+        resolve(res)
+    })
+}
+
+const resultado = calculoDemorado(10)
+resultado.then( (resultado) => console.log(resultado))
+// const finalizar = function (resultado){
+//     console.log(resultado)
+// }
+// resultado.then(finalizar)
+
+
+// function calculoDemorado (numero){
+//     let res = 0
+//     for (let i = 1; i <= numero; i++)
+//         res += i
+//     return res
+// }
+
+// const resultado = calculoDemorado(10)
+// console.log(resultado)
+
+
+
 // const fs = require ("fs")
 // const abrirArquivo = function (nomeArquivo){
 //     const exibirConteudo = function (erro, conteudo){
