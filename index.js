@@ -1,3 +1,130 @@
+const soma = (a, b) => a + b
+
+function subtracao (a, b){
+    return a - b
+}
+
+let calculadora = {
+    soma,
+    subtracao
+}
+console.log (calculadora.soma(2, 3))
+console.log (calculadora.subtracao(2, 3))
+
+
+// //JSON: JavaScript Object Notation
+// const concessionaria = {
+//     cnpj: '0001112220001-45',
+//     endereco: {
+//         logradouro: "Rua J",
+//         numero: 10,
+//         bairro: "Vila K"
+//     },
+//     veiculos: [
+//         {
+//             marca: "Ford",
+//             modelo: "Ka",
+//             anoDeFabricacao: 2016
+//         },
+//         {
+//             marca: "Chevrolet",
+//             modelo: "Onix",
+//             anoDeFabricacao: 2019
+//         },
+//         {
+//             marca: "Volkswagen",
+//             modelo: "Nivus",
+//             anoDeFabricacao: 2020
+//         }
+//     ]
+// }
+
+// for (let veiculo of concessionaria.veiculos){
+//     const { marca, modelo, anoDeFabricacao} = veiculo
+//     console.log ("Marca: " + marca)
+//     console.log ("Modelo: " + modelo)
+//     console.log ("Ano: " + anoDeFabricacao)
+
+// }
+//reescrever esse for usando um for tradicional
+//i = 0, i < n, i++
+// for (let i = 0; i < concessionaria.veiculos.length; i++){
+//     const { marca, modelo, anoDeFabricacao} = concessionaria.veiculos[i]
+//     console.log ("Marca: " + marca)
+//     console.log ("Modelo: " + modelo)
+//     console.log ("Ano: " + anoDeFabricacao)
+// }
+
+
+// const pessoaComEndereco = {
+//     nome: "Maria",
+//     idade: 21,
+//     endereco: {
+//         logradouro: "Rua B",
+//         numero: 121
+//     }
+// }
+
+
+// console.log (`
+// Sou ${pessoaComEndereco.nome},
+// tenho ${pessoaComEndereco.idade},
+// e moro na rua ${pessoaComEndereco.endereco['logradouro']},
+// número ${pessoaComEndereco['endereco']['numero']}
+// `)
+
+// const { endereco } = pessoaComEndereco
+// const { logradouro } = endereco
+// console.log(logradouro)
+// let pessoa = {
+//     nome: 'João',
+//     idade: 17
+// }
+// console.log ("Me chamo " + pessoa.nome)
+// console.log ("Tenho " + pessoa["idade"] + " anos")
+
+// const { nome, idade } = pessoa
+// console.log(nome)
+// console.log(idade)
+// function eAgora (){
+//     let cont = 1
+//     function f1 (){
+//         console.log(cont)
+//     }
+//     cont++
+//     function f2 (){
+//         console.log(cont)
+//     }
+//     return {f1, f2}
+// }
+
+// let eAgoraResult = eAgora()
+// eAgoraResult.f1()
+// eAgoraResult.f2()
+
+
+// function saudacoesFactory (saudacao, nome){
+//     return function (){
+//         console.log (`${saudacao}, ${nome}`)
+//     }
+// }
+// let olaJoao = saudacoesFactory('Oi', 'João')
+// let tchauJoao = saudacoesFactory ('Tchau', "João")
+
+// olaJoao()
+// tchauJoao()
+
+// function ola (){
+//     let nome = 'João'
+//     return function (){
+//         console.log (`Olá, ${nome}`)
+//     }
+// }
+// let olaResult = ola()
+
+
+// //esse resultado aqui é um callable
+// olaResult()
 
 
 // function ola (){
