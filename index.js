@@ -1,15 +1,115 @@
-const soma = (a, b) => a + b
+// const fs = require ("fs")
+// const abrirArquivo = function (nomeArquivo){
+//     const exibirConteudo = function (erro, conteudo){
+//         if (erro){
+//             console.log ("Erro")
+//             console.log(erro)
+//         }
+//         else{
+//             console.log(conteudo.toString())
+//             const dobro = +conteudo.toString() * 2
+//             const finalizar = function (erro){
+//                 if (erro){
+//                     console.log ("Erro ao finalizar")
+//                     console.log(erro)
+//                 }
+//                 else{
+//                     console.log ("Deu certo!")
+//                 }
+//             }
+//             fs.writeFile(
+//                 'dobro.txt', 
+//                 dobro.toString(),
+//                 finalizar
+//             )
+//         }
+//     }
+//     fs.readFile(nomeArquivo, exibirConteudo)
+// }
+// abrirArquivo ("arquivo.txt")
 
-function subtracao (a, b){
-    return a - b
-}
 
-let calculadora = {
-    soma,
-    subtracao
-}
-console.log (calculadora.soma(2, 3))
-console.log (calculadora.subtracao(2, 3))
+
+// const fs = require ("fs")
+// const abrirArquivo = function (nomeArquivo){
+//     const exibirConteudo = function (erro, conteudo){
+//         if (erro){
+//             console.log ("Erro")
+//             console.log(erro)
+//         }
+//         else{
+//             console.log(conteudo.toString())
+//         }
+//     }
+//     fs.readFile(nomeArquivo, exibirConteudo)
+// }
+// abrirArquivo ("arquivo.txt")
+
+
+// function demorada(){
+//     console.log ("Começando a demorada")
+//     //20/02/2022 1/1/1970 00h00
+//     //dia ms
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while (new Date().getTime() <= atualMais2Segundos);
+//     const d = 8 + 4
+//     return d
+// }
+// const a = 2 + 3
+// const b = 5 + 9
+
+// setTimeout(function(){
+//     const d = demorada()
+//     console.log ('d: ' + d)
+// }, 1000)
+
+// const e = a + b + 2
+// console.log ("e: " + e)
+
+
+// const e = 2 + a + b
+// console.log(e)
+
+
+
+
+
+// function demorada(){
+//     //20/02/2022 1/1/1970 00h00
+//     //dia ms
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while (new Date().getTime() <= atualMais2Segundos);
+//     const d = 8 + 4
+//     return d
+// }
+// const a = 2 + 3
+// const b = 5 + 9
+// const d = demorada()
+// const e = 2 + a + b
+// console.log(e)
+
+
+// const a = 2 + 5
+// const b = 5
+// console.log (a + b)
+
+
+// console.log ("Eu primeiro")
+// console.log ("Agora eu")
+// console.log ("Sempre vou executar por último")
+
+// const soma = (a, b) => a + b
+
+// function subtracao (a, b){
+//     return a - b
+// }
+
+// let calculadora = {
+//     soma,
+//     subtracao
+// }
+// console.log (calculadora.soma(2, 3))
+// console.log (calculadora.subtracao(2, 3))
 
 
 // //JSON: JavaScript Object Notation
