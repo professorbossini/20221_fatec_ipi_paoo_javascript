@@ -1,14 +1,68 @@
-function calculoDemorado (numero){
-    return new Promise(function (resolve, reject){
-        let res = 0
-        for (let i = 1; i <= numero; i++)
-            res += i
-        resolve(res)
-    })
+function calculoRapidinho (numero){
+    return Promise.resolve((numero * (numero + 1)) / 2)
 }
+calculoRapidinho(10)
+.then (resultado => console.log(resultado))
 
-const resultado = calculoDemorado(10)
-resultado.then( (resultado) => console.log(resultado))
+
+// //Promise é um objeto associado a uma "computação"
+// //que permite que o resultado dela seja obtido
+// //"no futuro" assim que estiver pronto
+// function calculoDemorado (numero){
+//     let p = new Promise(function(resolve, reject){
+//         if (numero < 0)
+//             reject('Use valores positivos')
+//         else{
+//             let ac = 0
+//             for (let i = 1; i <= numero; i++){
+//                 ac += i
+//             }
+//             resolve(ac)
+//         }
+//     })
+//     return p
+// }
+
+// const resultado = calculoDemorado(10)
+// resultado
+// .then((x) => console.log(x))
+// .catch((erro) => console.log(erro))
+
+// const resultado2 = calculoDemorado(-1)
+// resultado2
+// .then((res) => console.log(res))
+// .catch ((erro) => console.log (erro))
+
+
+
+
+//CPU-Bound
+//IO-Bound (Input Output)
+
+// 1 + 2 + ... + n -1 + n
+//versão bloqueante, síncrona
+// function calculoDemorado (numero){
+//     let res = 0
+//     for (let i = 1; i <= numero; i++)
+//         res += i
+//     return res
+// }
+
+// const resultado = calculoDemorado(10)
+// console.log(resultado)
+// console.log (2 + 3)
+
+// function calculoDemorado (numero){
+//     return new Promise(function (resolve, reject){
+//         let res = 0
+//         for (let i = 1; i <= numero; i++)
+//             res += i
+//         resolve(res)
+//     })
+// }
+
+// const resultado = calculoDemorado(10)
+// resultado.then( (resultado) => console.log(resultado))
 // const finalizar = function (resultado){
 //     console.log(resultado)
 // }
